@@ -1431,36 +1431,42 @@ END ELSE BEGIN
 END
 	END
 
-ACTION_IF NOT DIRECTORY_EXISTS ~lang/%LANGUAGE%/movies~ BEGIN
-	MKDIR ~lang/%LANGUAGE%/movies~
+  COPY - ~weidu.conf~ ~.../weidu.conf~
+    READ_2DA_ENTRY 0 2 3 "IW1_lang_dir"
+
+	PRINT ~Game in %IW1_lang_dir%...
+~
+
+ACTION_IF NOT DIRECTORY_EXISTS ~lang/%IW1_lang_dir%/movies~ BEGIN
+	MKDIR ~lang/%IW1_lang_dir%/movies~
 END
 
 // Special Tipun
 ACTION_IF Special_Tipun = 1 THEN BEGIN
-	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/IDINTRO.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/AVALANCH.wbm~ ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/IDTOWER.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/HOWDRAG.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/SCRY.wbm~     ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/RETURN.wbm~   ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/HOWSEER.wbm~  ~lang/%LANGUAGE%/movies~
+	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/IDINTRO.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/AVALANCH.wbm~ ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/IDTOWER.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/HOWDRAG.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/SCRY.wbm~     ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/RETURN.wbm~   ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/HOWSEER.wbm~  ~lang/%IW1_lang_dir%/movies~
 END ELSE BEGIN
 ACTION_IF (DIRECTORY_EXISTS ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE~) THEN BEGIN
-	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/IDINTRO.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/AVALANCH.wbm~ ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/IDTOWER.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/HOWDRAG.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/SCRY.wbm~     ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/RETURN.wbm~   ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/HOWSEER.wbm~  ~lang/%LANGUAGE%/movies~
+	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/IDINTRO.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/AVALANCH.wbm~ ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/IDTOWER.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/HOWDRAG.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/SCRY.wbm~     ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/RETURN.wbm~   ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/HOWSEER.wbm~  ~lang/%IW1_lang_dir%/movies~
 END ELSE BEGIN
-	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/IDINTRO.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/AVALANCH.wbm~ ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/IDTOWER.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/HOWDRAG.wbm~  ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/SCRY.wbm~     ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/RETURN.wbm~   ~lang/%LANGUAGE%/movies~
-	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/HOWSEER.wbm~  ~lang/%LANGUAGE%/movies~
+	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/IDINTRO.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/AVALANCH.wbm~ ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/IDTOWER.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/HOWDRAG.wbm~  ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/SCRY.wbm~     ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/RETURN.wbm~   ~lang/%IW1_lang_dir%/movies~
+	COPY_LARGE ~iwd1_eet/lang/en_US/IDMOVIE/HOWSEER.wbm~  ~lang/%IW1_lang_dir%/movies~
 END
 	END
 
