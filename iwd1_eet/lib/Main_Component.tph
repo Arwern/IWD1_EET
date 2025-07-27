@@ -1405,7 +1405,8 @@ ACTION_IF Special_Tipun = 1 THEN BEGIN
 	COPY_LARGE + ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/SCRY.wbm~     ~iwd1_eet/biffs/IDMOVIE1~
 	COPY_LARGE + ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/RETURN.wbm~   ~iwd1_eet/biffs/IDMOVIE1~
 	COPY_LARGE + ~iwd1_eet/lang/ru_RU/Special/IDMOVIE/HOWSEER.wbm~  ~iwd1_eet/biffs/IDMOVIE2~
-	PRINT ~iwd1_eet movies in Russian~
+	PRINT ~iwd1_eet movies in Russian
+	~
 END ELSE BEGIN
 ACTION_IF (DIRECTORY_EXISTS ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE~) THEN BEGIN
 	COPY_LARGE + ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/IDINTRO.wbm~  ~iwd1_eet/biffs/IDINTRO~
@@ -1415,7 +1416,8 @@ ACTION_IF (DIRECTORY_EXISTS ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE~) THEN BEGIN
 	COPY_LARGE + ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/SCRY.wbm~     ~iwd1_eet/biffs/IDMOVIE1~
 	COPY_LARGE + ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/RETURN.wbm~   ~iwd1_eet/biffs/IDMOVIE1~
 	COPY_LARGE + ~iwd1_eet/lang/%LANGUAGE%/IDMOVIE/HOWSEER.wbm~  ~iwd1_eet/biffs/IDMOVIE2~
-	PRINT ~iwd1_eet movies in %LANGUAGE%~
+	PRINT ~iwd1_eet movies in %LANGUAGE%
+	~
 END ELSE BEGIN
 	COPY_LARGE + ~iwd1_eet/lang/en_US/IDMOVIE/IDINTRO.wbm~  ~iwd1_eet/biffs/IDINTRO~
 	COPY_LARGE + ~iwd1_eet/lang/en_US/IDMOVIE/AVALANCH.wbm~ ~iwd1_eet/biffs/IDMOVIE2~
@@ -1424,7 +1426,8 @@ END ELSE BEGIN
 	COPY_LARGE + ~iwd1_eet/lang/en_US/IDMOVIE/SCRY.wbm~     ~iwd1_eet/biffs/IDMOVIE1~
 	COPY_LARGE + ~iwd1_eet/lang/en_US/IDMOVIE/RETURN.wbm~   ~iwd1_eet/biffs/IDMOVIE1~
 	COPY_LARGE + ~iwd1_eet/lang/en_US/IDMOVIE/HOWSEER.wbm~  ~iwd1_eet/biffs/IDMOVIE2~
-	PRINT ~iwd1_eet movies in english~
+	PRINT ~iwd1_eet movies in english
+	~
 END
 	END
 
@@ -1512,34 +1515,39 @@ MKDIR ~weidu_external/iwd1_eet/audio/IDDLGSN2~
 MKDIR ~weidu_external/iwd1_eet/audio/IDEXTSN1~
 MKDIR ~weidu_external/iwd1_eet/audio/IDEXTSN2~
 
-	PRINT ~iwd1_eet sounds in english~
+	PRINT ~iwd1_eet sounds in english
+	~
 
 // IDDLGSN1
 
 ACTION_IF (DIRECTORY_EXISTS ~iwd1_eet/lang/%LANGUAGE%/IDDLGSN1~) THEN BEGIN
 	COPY ~iwd1_eet/lang/%LANGUAGE%/IDDLGSN1~ ~weidu_external/iwd1_eet/audio/WIDDLGSN1~
-	PRINT ~iwd1_eet sounds in %LANGUAGE%~
+	PRINT ~iwd1_eet sounds in %LANGUAGE%
+	~
 END
 
 // IDDLGSN2
 
 ACTION_IF (DIRECTORY_EXISTS ~iwd1_eet/lang/%LANGUAGE%/IDDLGSN2~) THEN BEGIN
 	COPY ~iwd1_eet/lang/%LANGUAGE%/IDDLGSN2~ ~weidu_external/iwd1_eet/audio/WIDDLGSN2~
-	PRINT ~iwd1_eet sounds in %LANGUAGE%~
+	PRINT ~iwd1_eet sounds in %LANGUAGE%
+	~
 END
 
 // IDEXTSN1
 
 ACTION_IF (DIRECTORY_EXISTS ~iwd1_eet/lang/%LANGUAGE%/IDEXTSN1~) THEN BEGIN
 	COPY ~iwd1_eet/lang/%LANGUAGE%/IDEXTSN1~ ~weidu_external/iwd1_eet/audio/WIDEXTSN1~
-	PRINT ~iwd1_eet extension sounds in %LANGUAGE%~
+	PRINT ~iwd1_eet extension sounds in %LANGUAGE%
+	~
 END
 
 // IDDLGSN2
 
 ACTION_IF (DIRECTORY_EXISTS ~iwd1_eet/lang/%LANGUAGE%/IDEXTSN2~) THEN BEGIN
 	COPY ~iwd1_eet/lang/%LANGUAGE%/IDEXTSN2~ ~weidu_external/iwd1_eet/audio/WIDEXTSN2~
-	PRINT ~iwd1_eet extension sounds in %LANGUAGE%~
+	PRINT ~iwd1_eet extension sounds in %LANGUAGE%
+	~
 END
 
 /*
@@ -1549,7 +1557,8 @@ ACTION_IF Special_Tipun = 1 THEN BEGIN
 	COPY ~iwd1_eet/lang/%LANGUAGE%/Special/IDDLGSN2~ ~weidu_external/iwd1_eet/audio/WIDDLGSN2~
 	COPY ~iwd1_eet/lang/%LANGUAGE%/Special/IDEXTSN1~ ~weidu_external/iwd1_eet/audio/WIDEXTSN1~
 	COPY ~iwd1_eet/lang/%LANGUAGE%/Special/IDEXTSN2~ ~weidu_external/iwd1_eet/audio/WIDEXTSN2~
-	PRINT ~iwd1_eet extension sounds in %LANGUAGE%~
+	PRINT ~iwd1_eet extension sounds in %LANGUAGE%
+	~
 END
 */
 
