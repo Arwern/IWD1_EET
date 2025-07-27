@@ -1,5 +1,7 @@
 # IWD1-EET
 
+### Include Heart of Winter and Trial of the Luremaster extensions
+
 **Autor** : [Tipun](https://github.com/tipun81?tab=repositories)
 
 **Mod Forum** : [Arcanecoast](https://arcanecoast.ru/forum/viewtopic.php?f=31&t=1247)  
