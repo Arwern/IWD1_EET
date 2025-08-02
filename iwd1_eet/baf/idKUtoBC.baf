@@ -2,9 +2,10 @@ IF
 	True()
 THEN
 	RESPONSE #100
-		CutSceneId(Myself)
+		CutSceneId(Player1)
 		StartCutSceneMode()
 		SmallWait(5)
+		FadeToColor([15.0],0)
 		ActionOverride(Player2,LeaveAreaLUA("ID9200","",[1087.629],8))
 		ActionOverride(Player3,LeaveAreaLUA("ID9200","",[1172.634],8))
 		ActionOverride(Player4,LeaveAreaLUA("ID9200","",[1037.666],8))
@@ -14,5 +15,6 @@ THEN
 		LeaveAreaLUA("ID9200","",[1131.603],8)
 		SmallWait(5)
 		MultiPlayerSync()
+		FadeFromColor([15.0],0)
 		EndCutSceneMode()
 END

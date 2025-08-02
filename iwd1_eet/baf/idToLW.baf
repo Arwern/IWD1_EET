@@ -5,6 +5,7 @@ THEN
 		CutSceneId(Player1)
 		StartCutSceneMode()
 		SmallWait(5)
+		FadeToColor([15.0],0)
 		ActionOverride(Player2,LeaveAreaLUA("ID9100","",[958.2510],8))
 		ActionOverride(Player3,LeaveAreaLUA("ID9100","",[1085.2512],10))
 		ActionOverride(Player4,LeaveAreaLUA("ID9100","",[950.2540],6))
@@ -14,6 +15,7 @@ THEN
 		LeaveAreaLUA("ID9100","",[1021.2519],8)
 		SmallWait(5)
 		MultiPlayerSync()
+		FadeFromColor([15.0],0)
 		EndCutSceneMode()
 		//StartCutScene("LUA9100")
 END

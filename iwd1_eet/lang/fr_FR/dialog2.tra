@@ -129,13 +129,21 @@
 
 //GRIZELLA QUEST
 @120000 = ~Des scarabées dans la cave~
-@120001 = ~À la taverne du Berceau de l'hiver, nous avons demandé à boire. L'hôtesse nous a répondu que même si cela n'était pas facile à admettre... elle avais peur de descendre dans sa vieille cave poussiéreuse, des créatures y ont élu domicile, et elle est terrifiée par les insectes !~
-@120002 = ~Nous avons dit à Grisella que nous avions éliminé les insectes. Elle était très reconnaissante, elle a seulement demandé ... que ce petit problème reste entre nous. Elle ne veut pas que des rumeurs se répandent dans la ville, à propos de sa porcherie... sa taverne.~
+@120001 = ~Des scarabées dans la cave
+
+À la taverne du Berceau de l'hiver, nous avons demandé à boire. L'hôtesse nous a répondu que même si cela n'était pas facile à admettre... elle avais peur de descendre dans sa vieille cave poussiéreuse, des créatures y ont élu domicile, et elle est terrifiée par les insectes !~
+@120002 = ~Des scarabées dans la cave
+
+Nous avons dit à Grisella que nous avions éliminé les insectes. Elle était très reconnaissante, elle a seulement demandé ... que ce petit problème reste entre nous. Elle ne veut pas que des rumeurs se répandent dans la ville, à propos de sa porcherie... sa taverne.~
 
 //BANDOTH QUEST
 @120010 = ~Un Service pour Bandoth~
-@120011 = ~Dans le Gouffre de Dorn, un mage nommé Bandoth nous a demandé de lui rendre service en échange d'informations. Il nous a dit avoir envoyé son apprenti chercher de l'extrait de razorvigne, et que celui-ci était parti depuis plusieurs jours. Craignant qu'il ne soit tombé sur des habitants hostile dans les grottes, il a promis qu'il nous dirait ce que nous voulons savoir si nous trouvons son apprenti.~
-@120012 = ~Nous avons rapporté à Bandoth un extrait de razorvine que nous avons trouvé sur le corps d'un homme dans les grottes des Ettins au sud d'ici. Il était contrarié que maintenant que l'extrait était à sa disposition, son apprenti ne le soit plus. En effet, c'est une triste tournure des événements.~
+@120011 = ~Un Service pour Bandoth
+
+Dans le Gouffre de Dorn, un mage nommé Bandoth nous a demandé de lui rendre service en échange d'informations. Il nous a dit avoir envoyé son apprenti chercher de l'extrait de razorvigne, et que celui-ci était parti depuis plusieurs jours. Craignant qu'il ne soit tombé sur des habitants hostile dans les grottes, il a promis qu'il nous dirait ce que nous voulons savoir si nous trouvons son apprenti.~
+@120012 = ~Un Service pour Bandoth
+
+Nous avons rapporté à Bandoth un extrait de razorvine que nous avons trouvé sur le corps d'un homme dans les grottes des Ettins au sud d'ici. Il était contrarié que maintenant que l'extrait était à sa disposition, son apprenti ne le soit plus. En effet, c'est une triste tournure des événements.~
 
 
 
@@ -176,7 +184,7 @@
 @2000030 = ~Hailee Dunn~
 @2000031 = ~La famille Dunn~
 @2000032 = ~Le secret de Kieran~
-@2000033 = ~Des loups et...  Emmerich~
+@2000033 = ~Des loups et...  Emmerich~ // Le grand loup blanc et...  Emmerich
 @2000034 = ~Rose glacée~
 @2000035 = ~Frustralion~
 @2000038 = ~Le Roi de Profondorn~

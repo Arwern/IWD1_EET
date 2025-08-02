@@ -115,7 +115,7 @@ THEN
     SetGlobal("Hjollder_Quest","GLOBAL",3)
     SetGlobal("Join_Posse","GLOBAL",0)
 		SetGlobal("Move_To_HoW","GLOBAL",1)
-		DayNight(8)
+		//DayNight(8)
 		SetMasterArea("ID9100")
 		//ActionOverride(Player1,ApplySpellRES("bdresurr",Myself)) 
 		ApplySpellRES("bdresurr",Player2)
